@@ -35,14 +35,21 @@ $(document).ready(function() {
           $("body").removeClass("seven hitchHiker");
         }
       });
-      $("#answer").show();
       $("#answer").text(finalArray);
-      $("#reverse").click(function() {
-        const reverseArray = finalArray.reverse();
-        $("#answer").text(reverseArray);
-      });
+
+      const reverseArray = finalArray.reverse();
+      $("#rAnswer").text(reverseArray);
     };
   });
+  $("#robofy").click(function() {
+    $("#answer").show();
+    $("#rAnswer").hide();   
+  });
+  $("#reverse").click(function() {
+    $("#answer").hide();
+    $("#rAnswer").show();   
+  });
+
   $("button#originalBackground").click(function() {
     $("body").removeClass();
   });
