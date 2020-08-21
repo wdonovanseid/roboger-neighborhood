@@ -2,6 +2,7 @@ $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
     
+    const check = [1, 2, 3"];
     let num = parseInt($("#input").val());
     let numArray = [];
     let finalArray = [];
@@ -10,7 +11,7 @@ $(document).ready(function() {
     }
 
     numArray.forEach(function(number) {
-      if (number === 3) {
+      if (check.includes(number)) {
         finalArray.push(" Won't you be my neighbor?");
       } else if (number === 2) {
         finalArray.push(" Boop!");
