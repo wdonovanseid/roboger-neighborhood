@@ -67,3 +67,7 @@ $(document).ready(function() {
     $("body").addClass("daytime");
   });
 });
+
+
+const check = ["0","1","2","3"]
+const finalNum = check.replace(/[123]/g, "test")
