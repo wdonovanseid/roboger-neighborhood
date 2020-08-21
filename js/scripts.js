@@ -4,12 +4,12 @@ $(document).ready(function() {
     
     const num = parseInt($("#input").val());
     let numArray = [];
-    let finalArray = [];
     let tempArray = [];
+    let finalArray = [];
 
     for (i=0; i<=num; i++) {
-      let temp = i.toString();
-      numArray.push(temp);
+      let iString = i.toString();
+      numArray.push(iString);
     }
 
     numArray.forEach(function(number) {
