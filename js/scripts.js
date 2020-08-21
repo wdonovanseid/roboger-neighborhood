@@ -10,7 +10,9 @@ $(document).ready(function() {
     }
 
     numArray.forEach(function(number) {
-      if (number === 1) {
+      if (number === 2) {
+        finalArray.push("Boop!");
+      } else if (number === 1) {
         finalArray.push("Beep!");
       } else {
         finalArray.push(number);
