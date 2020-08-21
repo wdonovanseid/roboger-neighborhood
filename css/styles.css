@@ -3,7 +3,10 @@ h1 {
 }
 
 .jumbotron {
-  background-color: rgb(97, 47, 47);
+  background-image: url(../img/roger.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   color: black;
 }
 

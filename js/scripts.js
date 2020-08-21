@@ -69,5 +69,5 @@ $(document).ready(function() {
 });
 
 
-const check = ["0","1","2","3"]
+const check = "012345"
 const finalNum = check.replace(/[123]/g, "test")
