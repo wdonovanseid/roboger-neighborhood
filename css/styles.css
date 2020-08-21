@@ -15,7 +15,20 @@ h1 {
 
 body {
   background-color: skyblue;
-  font-family: sans-serif;
+  font-family: Times;
+}
+
+.seven {
+  background-image: url(../img/seven.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.hitchHiker {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../img/42.jpg);
 }
 
 @keyframes flashy {

@@ -23,6 +23,12 @@ $(document).ready(function() {
       } else {
         finalArray.push(" "+number)
       }
+      if (number === "7") {
+        $("body").addClass("seven");
+      } 
+      if (number === "42") {
+        $("body").addClass("hitchHiker");
+      }
     });
     $("#answer").show();
     $("#answer").text(finalArray);
