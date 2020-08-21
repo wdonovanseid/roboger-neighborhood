@@ -1,0 +1,45 @@
+h1 {
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: rgb(97, 47, 47);
+  color: black;
+}
+
+.card {
+  background-color: rgb(255, 11, 11);
+  padding: 14px;
+  margin: 20px;
+}
+
+body {
+  background-color: skyblue;
+  font-family: sans-serif;
+}
+
+@keyframes flashy {
+  0% {background-color: yellow;}
+  25% {background-color: blue;}
+  50% {background-color: green;}
+  100% {background-color: red;}
+}
+
+#answer {
+  display: none;
+  background-color: yellow;
+  animation-name: flashy;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  color: white;
+}
+
+.nighttime {
+  background-color: black;
+  color: white;
+}
+
+.daytime {
+  background-color: white;
+  color: black;
+}

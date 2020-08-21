@@ -24,7 +24,20 @@ $(document).ready(function() {
         finalArray.push(" "+number)
       }
     });
-
+    $("#answer").show();
     $("#answer").text(finalArray);
+  });
+  $("button#originalBackground").click(function() {
+    $("body").removeClass();
+  });
+
+  $("button#darkBackground").click(function() {
+    $("body").removeClass();
+    $("body").addClass("nighttime");
+  });
+
+  $("button#lightBackground").click(function() {
+    $("body").removeClass();
+    $("body").addClass("daytime");
   });
 });
