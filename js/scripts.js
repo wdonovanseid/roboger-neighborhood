@@ -67,7 +67,3 @@ $(document).ready(function() {
     $("body").addClass("daytime");
   });
 });
-
-
-const check = "012345"
-const finalNum = check.replace(/[123]/g, "test")
