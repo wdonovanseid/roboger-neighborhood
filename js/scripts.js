@@ -19,8 +19,10 @@ $(document).ready(function() {
 
       numArray.forEach(function(number) {
         tempArray = number.split("");
-        if (tempArray.includes("3")) {
-          finalArray.push(" Won't you be my neighbor? " + userN)
+        if (tempArray.includes("1") && tempArray.includes("3")) {
+          finalArray.push(" Woops!");
+        } else if (tempArray.includes("3")) {
+          finalArray.push(" Won't you be my neighbor? " + userN);
         } else if (tempArray.includes("2")) {
           finalArray.push(" Boop!");
         } else if (tempArray.includes("1")) {
