@@ -2,7 +2,6 @@ $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
     
-    const check = ["1"];
     const num = parseInt($("#input").val());
     let numArray = [];
     let finalArray = [];
@@ -14,14 +13,21 @@ $(document).ready(function() {
     }
 
     numArray.forEach(function(number) {
-	    tempArray=number.split("");
+      tempArray=number.split("");
       for (const tempNum of tempArray) {
-  	    if (check.includes(tempNum)) {
-    	    finalArray.push("Beep!");
+        if (tempNum.includes(2)) {
+          finalArray.push("Boop!");
           break;
-  	    } else {
-    	    finalArray.push(number)
-  	    }
+        } else if (tempNum.includes(1)) {
+          if (tempArray.includes("3") || tempArray.includes("2")) {
+            console.log(tempArray);
+            break;
+          }
+          finalArray.push("Beep!");
+          break;
+        } else {
+          finalArray.push(number)
+        }
       }
     });
 
