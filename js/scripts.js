@@ -2,12 +2,13 @@ $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
     
-    const check = [1, 2, 3"];
+    const check = [1, 2, 3];
     let num = parseInt($("#input").val());
     let numArray = [];
     let finalArray = [];
     for (i=0; i<=num; i++) {
-      numArray.push(i);
+      let temp = i.toString();
+      numArray.push(temp);
     }
 
     numArray.forEach(function(number) {
@@ -24,4 +25,11 @@ $(document).ready(function() {
 
     $("#answer").text(finalArray);
   });
+});
+
+
+numArray.forEach(function(number) {
+  if (check.includes(number)) {
+    finalArray.push("why");
+  }
 });
