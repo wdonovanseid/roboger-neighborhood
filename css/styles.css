@@ -59,6 +59,14 @@ body {
   color: white;
 }
 
+.bottom {
+  background-color: darkblue;
+  border: solid red;
+  border-width: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+
 .nighttime {
   background-color: black;
   color: white;
