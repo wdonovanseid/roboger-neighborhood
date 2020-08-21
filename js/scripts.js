@@ -14,12 +14,14 @@ $(document).ready(function() {
 
     numArray.forEach(function(number) {
       tempArray = number.split("");
-      if (tempArray.includes("2")) {
-        finalArray.push("Boop!");
+      if (tempArray.includes("3")) {
+        finalArray.push(" Won't you be my neighbor?")
+      } else if (tempArray.includes("2")) {
+        finalArray.push(" Boop!");
       } else if (tempArray.includes("1")) {
-        finalArray.push("Beep!");
+        finalArray.push(" Beep!");
       } else {
-        finalArray.push(number)
+        finalArray.push(" "+number)
       }
     });
 
