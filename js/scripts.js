@@ -10,7 +10,9 @@ $(document).ready(function() {
     }
 
     numArray.forEach(function(number) {
-      if (number === 2) {
+      if (number === 3) {
+        finalArray.push("Won't you be my neighbor?");
+      } else if (number === 2) {
         finalArray.push("Boop!");
       } else if (number === 1) {
         finalArray.push("Beep!");
