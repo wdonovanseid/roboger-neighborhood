@@ -13,21 +13,13 @@ $(document).ready(function() {
     }
 
     numArray.forEach(function(number) {
-      tempArray=number.split("");
-      for (const tempNum of tempArray) {
-        if (tempNum.includes(2)) {
-          finalArray.push("Boop!");
-          break;
-        } else if (tempNum.includes(1)) {
-          if (tempArray.includes("3") || tempArray.includes("2")) {
-            console.log(tempArray);
-            break;
-          }
-          finalArray.push("Beep!");
-          break;
-        } else {
-          finalArray.push(number)
-        }
+      tempArray = number.split("");
+      if (tempArray.includes("2")) {
+        finalArray.push("Boop!");
+      } else if (tempArray.includes("1")) {
+        finalArray.push("Beep!");
+      } else {
+        finalArray.push(number)
       }
     });
 
