@@ -31,8 +31,12 @@ Spec: The program replaces all digits with "Boop!" if the number contains a 2
 Input: "2"
 Output: "Boop!"
 
-Spec: The program replaces all digits with "Beep!" if the number contains a 3
+Spec: The program replaces all digits with "Won't you be my neighbor?" if the number contains a 3
 Input: "3"
+Output: "Won't you be my neighbor?"
+
+Spec: The program only recognizes the highest spec lvl if a number contains a 3, 2, and/or 1
+Input: "13"
 Output: "Won't you be my neighbor?"
 
 ## Known Bugs
